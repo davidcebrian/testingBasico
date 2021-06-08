@@ -447,12 +447,12 @@ para probarlo hemos introducido
 [*https://google.com*](https://google.com), eso nos abre una ventana
 nueva con google.com abierto y la aplicación grabando automáticamente:
 
-!['newproj'](https://github.com/davidcebrian/testingBasico/blob/main/images/newproj.png)
+!['newproj'](https://github.com/davidcebrian/testingBasico/blob/main/images/newproj.PNG)
 
 Ahora empezamos haciendo una búsqueda en google y veremos que se añaden
 comandos en la aplicación. Podemos añadir por ejemplo “hola test”
 
-!['holat'](https://github.com/davidcebrian/testingBasico/blob/main/images/holat.png)
+!['holat'](https://github.com/davidcebrian/testingBasico/blob/main/images/holat.PNG)
 
 Y desde aquí para comprobar que hemos buscado correctamente hola test
 podemos comprobar que existe el primer link, esto lo hacemos clickando
@@ -461,7 +461,7 @@ en target clickeamos en el icono de la ventana para poder seleccionar un
 elemento de la página en la que estamos. Ahora pulsamos en el icono de
 stop record arriba a la derecha:
 
-!['stoprec'](https://github.com/davidcebrian/testingBasico/blob/main/images/stoprec.png)
+!['stoprec'](https://github.com/davidcebrian/testingBasico/blob/main/images/stoprec.PNG)
 
 Una vez pausemos nos pedirá que ingresemos un nombre y después podemos
 seleccionar el test que hemos creado en la lista de la izquierda y darle
@@ -469,13 +469,13 @@ al play para ejecutarlo, y vemos que hace automáticamente los pasos que
 nosotros hemos hecho en la grabación. Podemos cambiar la velocidad a la
 que se ejecuta el test para darle tiempo a cargar las páginas antes de
 hacer las comprobaciones en el icono del
-reloj.!['reloj'](https://github.com/davidcebrian/testingBasico/blob/main/images/reloj.png)
+reloj.!['reloj'](https://github.com/davidcebrian/testingBasico/blob/main/images/reloj.PNG)
 
 Una vez tenemos nuestro script lo podemos exportar a otro idioma para
 lanzarlo desde otro sitio haciendo click secundario en el test → export
 :
 
-!['export'](https://github.com/davidcebrian/testingBasico/blob/main/images/export.png)
+!['export'](https://github.com/davidcebrian/testingBasico/blob/main/images/export.PNG)
 
 Éste es el funcionamiento más básico de Selenium IDE, a partir de ahí se
 pueden crear scripts y grabaciones de pruebas mucho más complejas y
@@ -649,7 +649,7 @@ utilizar.
 Y para probar que todo funciona correctamente podemos crear una
 instancia del navegador esperar 5 segundos y cerrarla de esta forma:
 
-!['prueba'](https://github.com/davidcebrian/testingBasico/blob/main/images/prueb.png)
+!['prueba'](https://github.com/davidcebrian/testingBasico/blob/main/images/prueb.PNG)
 
 Ésta sencilla clase abre nuestro navegador según el driver que
 instanciamos, espera 5 segundos ( *thread.sleep(5000)* ) y se cierra(
@@ -659,7 +659,7 @@ Siempre debemos introducir los pasos dentro de un try - catch - finally
 y dentro del finally cerrar el navegador y la sesión de selenium con:
 *driver.quit();*
 
-!['trycatch'](https://github.com/davidcebrian/testingBasico/blob/main/images/trycat.png)
+!['trycatch'](https://github.com/davidcebrian/testingBasico/blob/main/images/trycat.PNG)
 
 Y todos nuestros procesos irán dentro del try. Se deben ir añadiendo
 pequeños tiempos de espera( *Thread.sleep(time)* ) para darle tiempo al
@@ -676,7 +676,7 @@ hacia una página y mostrar su titulo por consola:
 -   Y ya solo nos queda mostrar el string que nos devuelve por consola
     > con *System.println()*
 
-!['print'](https://github.com/davidcebrian/testingBasico/blob/main/images/print.png)
+!['print'](https://github.com/davidcebrian/testingBasico/blob/main/images/print.PNG)
 
 #####  **IDENTIFICACIÓN DE ELEMENTOS**
 
@@ -697,7 +697,7 @@ sólo nos devolverá el primero
 Como ejemplo extraemos el título de la página a través de su tag y
 extrayendo el texto que contiene:
 
-!['capturar'](https://github.com/davidcebrian/testingBasico/blob/main/images/capt.png)
+!['capturar'](https://github.com/davidcebrian/testingBasico/blob/main/images/capt.PNG)
 
 Existen otras formas de seleccionar los elementos, las cuáles se pueden
 encontrar en la página oficial de selenium:
@@ -738,7 +738,7 @@ tanto los recomendados son:
     > botón esté habilitado para ser clicado. Se declara de la siguiente
     > forma:
 
- !['implicit'](https://github.com/davidcebrian/testingBasico/blob/main/images/implicit.png)
+ !['implicit'](https://github.com/davidcebrian/testingBasico/blob/main/images/implicit.PNG)
 
 -   **Fluent Wait**: 
     >Se declara solo cuando vaya a ser usado y solo se
@@ -748,7 +748,7 @@ tanto los recomendados son:
     > el tiempo se
     > termine.
 
-!['fluent'](https://github.com/davidcebrian/testingBasico/blob/main/images/fluent.png) 
+!['fluent'](https://github.com/davidcebrian/testingBasico/blob/main/images/fluent.PNG) 
 
 <!-- -->
 
@@ -760,7 +760,7 @@ tanto los recomendados son:
     > encuentre para que finalice la espera. Como el anterior también se
     > declara cuando vaya a ser usado:
 
-!['Explicit'](https://github.com/davidcebrian/testingBasico/blob/main/images/explicit.png)
+!['Explicit'](https://github.com/davidcebrian/testingBasico/blob/main/images/explicit.PNG)
 
 ##### **FORMULARIOS**
 
@@ -876,7 +876,7 @@ también se nos crea ese archivo automáticamente.
 
 Ese archivo es donde se hacen los test para posteriormente ser
 ejecutados con el comando ***ng test***
-!['archivotest'](https://github.com/davidcebrian/testingBasico/blob/main/images/componenspec.png)
+!['archivotest'](https://github.com/davidcebrian/testingBasico/blob/main/images/componenspec.PNG)
 
  Si no hemos tocado nada justo después de crear nuestro proyecto
  lanzamos este comando se nos abre un navegador con los resultados de
@@ -885,7 +885,7 @@ ejecutados con el comando ***ng test***
  autogenerado nos deberán fallar los test y mostrarnos una pantalla
  como esta:
 
- !['execute'](https://github.com/davidcebrian/testingBasico/blob/main/images/ejecucion.png)
+ !['execute'](https://github.com/davidcebrian/testingBasico/blob/main/images/ejecucion.PNG)
 
  Lo primero que nos encontramos es la importación de TestBed para poder
  ejecutar nuestros tests y el componente que vamos a testear.
@@ -895,7 +895,7 @@ hacer pruebas en Angular. Crea un módulo angular de prueba que se
  configura con el método configureTestingModule para producir el
  entorno del módulo para la clase que desea probar.
 
- !['imports'](https://github.com/davidcebrian/testingBasico/blob/main/images/imports.png)
+ !['imports'](https://github.com/davidcebrian/testingBasico/blob/main/images/imports.PNG)
 
  Para realizar un test nos vamos al archivo .spec.ts del componente y
  para declarar una prueba o test tenemos la funcion **it()** dentro de
@@ -903,9 +903,9 @@ hacer pruebas en Angular. Crea un módulo angular de prueba que se
  las pruebas y mediante una función de flechas donde van todas las
  pruebas que vayamos a hacer con ese componente:
 
- !['describe'](https://github.com/davidcebrian/testingBasico/blob/main/images/describe.png)
+ !['describe'](https://github.com/davidcebrian/testingBasico/blob/main/images/describe.PNG)
 
- !['describe2'](https://github.com/davidcebrian/testingBasico/blob/main/images/describe2.png)
+ !['describe2'](https://github.com/davidcebrian/testingBasico/blob/main/images/describe2.PNG)
 
  Dentro de la función debemos especificar es una descripcion de nuestra
  prueba, y como segundo parámetro le añadimos lo que debe hacer nuestro
@@ -928,7 +928,7 @@ Y muchas otras más.
  **beforeEach()**, al igual que la etiqueta **@before** en Java para
  que se ejecute antes de cada prueba:
 
- !['beforeeach'](https://github.com/davidcebrian/testingBasico/blob/main/images/beforeeach.png)
+ !['beforeeach'](https://github.com/davidcebrian/testingBasico/blob/main/images/beforeeach.PNG)
 
  Ahí vemos como inicializamos nuestro componente. Podemos instanciarlo
  fuera del beforeEach y dentro lo inicializamos. Así ya podemos acceder
@@ -942,7 +942,7 @@ Y muchas otras más.
  ahorrando el uso de otras dependencias internas del servicio como
  puede ser LocalStorage o llamadas a otras APIS externas:
 
- !['mock'](https://github.com/davidcebrian/testingBasico/blob/main/images/mock.png)
+ !['mock'](https://github.com/davidcebrian/testingBasico/blob/main/images/mock.PNG)
 
 # **REFERENCIAS** #
 
