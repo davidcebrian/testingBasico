@@ -1,0 +1,357 @@
+{
+  "id": "f99814e6-ed93-472c-afb8-fcaea0eb4695",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://www.pccomponentes.com",
+  "tests": [{
+    "id": "6d1df17f-10eb-4f28-8a5f-eeaaba820552",
+    "name": "logTest",
+    "commands": [{
+      "id": "11d94b27-d35f-40e4-a9d0-ac645e74e8df",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6505e405-6ea3-4129-84c4-38d9736552ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8622b15-5129-4f59-b52b-c2a455de8a7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.qa-user-login-button > .Svg-sc-1w4q54b",
+      "targets": [
+        ["css=.qa-user-login-button > .Svg-sc-1w4q54b", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b0026e-b303-492a-a05e-a1e827d43eb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.eUByCR > .StyledChild-sc-1ue35bw",
+      "targets": [
+        ["css=.eUByCR > .StyledChild-sc-1ue35bw", "css:finder"],
+        ["xpath=//form[@id='login-form']/button/div", "xpath:idRelative"],
+        ["xpath=//form/button/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1403",
+      "windowTimeout": 2000
+    }, {
+      "id": "fc39861b-14f2-4101-8390-b283014ad9f5",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebf0dc25-a2a8-4332-a1b0-466bd6b750a2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1403}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a732b7df-612a-454c-b46e-a6cad59b2172",
+      "comment": "",
+      "command": "click",
+      "target": "css=.JDAKTe:nth-child(1) .w1I7fb",
+      "targets": [
+        ["css=.JDAKTe:nth-child(1) .w1I7fb", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40b7f8a1-c994-44be-a9df-50f844ef36a8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31037dd5-91ca-449a-86cb-727f4d0b321a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.user-panel-letter",
+      "targets": [
+        ["css=.user-panel-letter", "css:finder"],
+        ["xpath=//a[@id='user-menu-panel']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a57b4cb2-4385-4224-a60a-9c350e17bb22",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.user-panel-letter",
+      "targets": [
+        ["css=.user-panel-letter", "css:finder"],
+        ["xpath=//a[@id='user-menu-panel']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4865c9c1-820e-490a-ae93-88650fab0f2b",
+    "name": "testRealizarPed",
+    "commands": [{
+      "id": "980f9fd7-c05c-4452-a592-a2bb201aa630",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ef53047-0e8e-46a6-894e-ae4088ee2d5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f07737d3-3e6a-496c-89f0-13e753d3a9b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#recommended-articles > .product:nth-child(2) .image",
+      "targets": [
+        ["css=#recommended-articles > .product:nth-child(2) .image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://thumb.pccomponentes.com/w-220-220/articles/10/100849/l-link-fuente-de-alimentacion-850w-80-plus-bronze-modular.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='recommended-articles']/div[2]/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a8cdb7f-fdf6-496e-8ec7-77bca52ef0ff",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7f303fd-2d79-49c1-a15e-38bc5dd59df1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btnsWishAddBuy > .btn-primary",
+      "targets": [
+        ["css=#btnsWishAddBuy > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='btnsWishAddBuy']/button[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div/div/div/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb3dc142-0d10-4fb4-bca7-b7c3e017cbad",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=GTM-carrito-realizarPedidoPaso1",
+      "targets": [
+        ["id=GTM-carrito-realizarPedidoPaso1", "id"],
+        ["linkText=REALIZAR PEDIDO", "linkText"],
+        ["css=#GTM-carrito-realizarPedidoPaso1", "css:finder"],
+        ["xpath=//a[contains(text(),'REALIZAR PEDIDO')]", "xpath:link"],
+        ["xpath=//a[@id='GTM-carrito-realizarPedidoPaso1']", "xpath:attributes"],
+        ["xpath=//div[@id='contenedor-principal']/div/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart/order')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REALIZAR PEDIDO')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "caa62284-4cec-43b3-9d87-468bd572f0a6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=GTM-carrito-realizarPedidoPaso1",
+      "targets": [
+        ["id=GTM-carrito-realizarPedidoPaso1", "id"],
+        ["linkText=REALIZAR PEDIDO", "linkText"],
+        ["css=#GTM-carrito-realizarPedidoPaso1", "css:finder"],
+        ["xpath=//a[contains(text(),'REALIZAR PEDIDO')]", "xpath:link"],
+        ["xpath=//a[@id='GTM-carrito-realizarPedidoPaso1']", "xpath:attributes"],
+        ["xpath=//div[@id='contenedor-principal']/div/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart/order')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REALIZAR PEDIDO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "643ec41c-cddf-4612-b060-652845bafa84",
+    "name": "testAnadirCarro",
+    "commands": [{
+      "id": "120ed867-7f44-4fbf-9a75-aa02980c66b1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edcc3db4-2a69-448b-81d3-ec5c2a42ce1d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e03920ac-9840-4cd2-813e-4580519b26bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#recommended-articles > .product:nth-child(3) .image",
+      "targets": [
+        ["css=#recommended-articles > .product:nth-child(3) .image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://thumb.pccomponentes.com/w-220-220/articles/9/97511/seagate-expansion-2-5-4tb-usb-3-0.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='recommended-articles']/div[3]/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fe5777d-1c25-4b03-ac83-32bb23ea4d7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-cart",
+      "targets": [
+        ["id=add-cart", "id"],
+        ["css=#add-cart", "css:finder"],
+        ["xpath=//button[@id='add-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='btnsWishAddBuy']/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "125fa1d9-5388-4a1a-9754-b2cc137ce7fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-cart-trigger",
+      "targets": [
+        ["id=user-cart-trigger", "id"],
+        ["css=#user-cart-trigger", "css:finder"],
+        ["xpath=//a[@id='user-cart-trigger']", "xpath:attributes"],
+        ["xpath=//body[@id='ficha-producto']/header/div[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart/')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29831711-4c55-4bb0-9200-1418ec61fad3",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.enlace-superpuesto",
+      "targets": [
+        ["css=.enlace-superpuesto", "css:finder"],
+        ["xpath=//ul[@id='pccom-basket']/li[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seagate-expansion-25-4tb-usb-30')]", "xpath:href"],
+        ["xpath=//li[2]/div/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2f68c26d-df37-4fea-ba7d-1c89ade11aff",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.enlace-superpuesto",
+      "targets": [
+        ["css=.enlace-superpuesto", "css:finder"],
+        ["xpath=//ul[@id='pccom-basket']/li[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/seagate-expansion-25-4tb-usb-30')]", "xpath:href"],
+        ["xpath=//li[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8d338b14-3bef-4d83-b242-ef288b25886f",
+    "name": "Busqueda",
+    "commands": [{
+      "id": "b9db3376-5b73-4ae7-acf1-13310c644e7d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9384a6a-439e-4a35-a17a-eaa8f1472296",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d624ed9c-da1e-4d65-8ef0-69b1eb502443",
+      "comment": "",
+      "command": "click",
+      "target": "id=ais-autocomplete-selectized",
+      "targets": [
+        ["id=ais-autocomplete-selectized", "id"],
+        ["css=#ais-autocomplete-selectized", "css:finder"],
+        ["xpath=//input[@id='ais-autocomplete-selectized']", "xpath:attributes"],
+        ["xpath=//form[@id='pcc-search-autocomplete']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12880c81-f0e3-4ae8-97ab-8814e19e4573",
+      "comment": "",
+      "command": "type",
+      "target": "id=ais-autocomplete-selectized",
+      "targets": [
+        ["id=ais-autocomplete-selectized", "id"],
+        ["css=#ais-autocomplete-selectized", "css:finder"],
+        ["xpath=//input[@id='ais-autocomplete-selectized']", "xpath:attributes"],
+        ["xpath=//form[@id='pcc-search-autocomplete']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "ordenador gaming"
+    }, {
+      "id": "3c10c9d9-5957-4f30-8768-68865d622b7e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=ais-autocomplete-selectized",
+      "targets": [
+        ["id=ais-autocomplete-selectized", "id"],
+        ["css=#ais-autocomplete-selectized", "css:finder"],
+        ["xpath=//input[@id='ais-autocomplete-selectized']", "xpath:attributes"],
+        ["xpath=//form[@id='pcc-search-autocomplete']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a1ee58ad-202f-4763-8cea-39e00434a120",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.Wrapper-sc-8udqwp:nth-child(1) .sc-dHMioH",
+      "targets": [
+        ["css=.Wrapper-sc-8udqwp:nth-child(1) .sc-dHMioH", "css:finder"],
+        ["xpath=//div[@id='root']/main/div[4]/div/div[3]/div[4]/a/div/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Asus Rog Zephyrus S17 GX701LV-EV010T Intel Core i7-10750H/16GB/512GB SSD/RTX 2060/17.3\" Reacondicionado')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "41ca5c1f-9fb8-4a3f-a203-d7a43ed388f5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.Wrapper-sc-8udqwp:nth-child(1) .sc-dHMioH",
+      "targets": [
+        ["css=.Wrapper-sc-8udqwp:nth-child(1) .sc-dHMioH", "css:finder"],
+        ["xpath=//div[@id='root']/main/div[4]/div/div[3]/div[4]/a/div/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Asus Rog Zephyrus S17 GX701LV-EV010T Intel Core i7-10750H/16GB/512GB SSD/RTX 2060/17.3\" Reacondicionado')]", "xpath:innerText"]
+      ],
+      "value": "Asus Rog Zephyrus S17 GX701LV-EV010T Intel Core i7-10750H/16GB/512GB SSD/RTX 2060/17.3\" Reacondicionado"
+    }]
+  }],
+  "suites": [{
+    "id": "20009f7c-c648-4b59-97b3-c2d4e0f12449",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.pccomponentes.com/"],
+  "plugins": []
+}
